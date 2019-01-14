@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web-Dev</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Fredoka+One" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="wrapper" id="game-background">
+            <div id="filter"></div>
+            <div id="instruction">
+                <h1>ROUND 1</h1>
+                <p>
+                    Press the arrow keys to move your character and eat fishes  
+                </p>
+                <img class="arrow-ins" src="SVG/controls.svg">
+            </div>
+            <img class="fish" id="good-fish1" src="SVG/good-fish.svg">
+            <img class="fish" id="good-fish2" src="SVG/good-fish.svg">
+            <img class="fish" id="good-fish3" src="SVG/good-fish.svg">
+            <img class="fish" id="good-fish4" src="SVG/good-fish.svg">
+            <img class="fish" id="good-fish5" src="SVG/good-fish.svg">
+            
+            <div id="ch">
+                <img id="myPenguin"src="SVG/ch1-right.svg">
+            </div>
+            
+            <img id="crown" src="SVG/crown.svg"/>
+            <div id="progressBar">
+                <div id="remain"></div>
+                <div id="progress"></div>
+            </div>  
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="game.js"></script>
+    </body>
+</html>

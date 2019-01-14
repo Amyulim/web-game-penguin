@@ -1,0 +1,320 @@
+
+body{
+/*    font-family:'Fredoka One', cursive;*/
+    font-family: 'Baloo', cursive;
+}
+#background{ 
+    background-image: url('SVG/background.svg');
+    background-blend-mode: darken;
+ 
+}
+.wrapper{
+    width: 1000px;
+    height: 700px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid #299199;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    overflow: hidden;
+}
+#game-background{
+    background-image: url(SVG/background2.svg);
+    background-size: auto 100%;
+}
+#game-background2{
+    background-image: url(SVG/background3.svg);
+    background-size:200% !important; 
+    background-position:center;
+/*    background-position: center;*/
+}
+#charaters{
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+    color:white;
+}
+.chaBox{
+    background-color: #D3E2E2;
+    width: 30%;
+    height: 360px;
+    margin: 0 5%;
+    border-radius: 10px;
+    display: inline-block;
+    color: black;
+    border:10px solid #D3E2E2;
+}
+.chs{
+    width: 70%;
+    margin: 0rem 2rem 0rem 2.5rem;
+    height: auto;
+}
+.button{
+    font-size: 1.9rem;
+    font-family: 'Baloo', cursive;
+    border-radius: 30px;
+    width: 150px;
+    color: white;
+    background-color: #3DBFC9;
+    border: none;
+    cursor: pointer;
+}
+.button:hover{
+    color: #3DBFC9;
+    background-color: white;
+}
+.arrow-ins{
+    width: 40%;
+    margin: 10px 32% 23px 32%;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink{
+    50%{opacity: 0.7;}
+}
+#ch{
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    top:500px ;
+    left: 20px;
+    transition: 0.5s;
+    z-index: 140;
+}
+#ice{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+#myPenguin{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;   
+}
+
+.fish{
+    width:60px;
+    height: auto;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#good-fish1{
+    top: 350px;
+    left: 40px;
+    animation: fish1 2s infinite;
+}
+#good-fish2{
+    top:370px;
+    left:750px;
+    animation: fish2 2.5s infinite;
+    transform: rotateY(180deg); 
+}
+#good-fish3{
+    top:100px;
+    left:500px;
+    animation: fish3 2s infinite;
+}
+#good-fish4{
+    top:230px;
+    left:280px;
+    animation: fish4 2.5s infinite;
+}
+#good-fish5{
+    top:530px;
+    left:460px;
+    animation: fish5 2.5s infinite;
+}
+@keyframes fish1{
+    30%{top:340px;left:20px;transform: rotateX(0deg) rotate(10deg);}
+    60%{top:360px;left:0px;transform: rotateY(180deg);}
+}
+@keyframes fish2{
+    30%{top:390px;left:760px;transform: rotateX(0deg) ;}
+    60%{top:360px;left:730px;transform: rotateY(0deg);}
+}
+@keyframes fish3{
+    30%{top:120px;left:540px;transform: rotateX(0deg) ;}
+    60%{top:160px;left:510px;transform: rotateY(0deg);}
+}
+@keyframes fish4{
+    30%{top:240px;left:240px;transform: rotateX(0deg) rotate(-10deg);}
+    60%{top:220px;left:210px;transform: rotateY(180deg) rotate(10deg);}
+}
+@keyframes fish5{
+    30%{top:550px;left:400px;transform: rotateX(0deg) rotate(-10deg);}
+    60%{top:600px;left:480px;transform: rotateY(180deg) rotate(10deg);}
+}
+.progressNum{
+    width: 40px;
+    font-size: 1.4rem;
+    height: auto;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    animation: numUp 1.5s infinite;
+    color:white;
+}
+@keyframes numUp{
+    100%{top:-40px; transform: scale(1.2);opacity: 0;}
+}
+#crown{
+    width:50px;
+    height: auto;
+    position: absolute;
+    top:10px;
+    left: 20px;
+}
+#crown-getting{
+    width: 100px;
+    animation: crownAnmi 2s infinite;
+}
+@keyframes crownAnmi{
+    50%{transform: rotateY(180deg) scale(0.8);}
+}
+#progressBar{
+    width: 500px;
+    height: 30px;
+    border: 3px solid #156268;
+    border-radius: 30px;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    overflow: hidden;
+}
+#remain{
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#progress{
+    width: 0px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #5DA1A3;
+    transition:1s;  
+}
+#next{
+    margin: 0 33% 25px 32%;
+    border: 3px solid #3DBFC9;
+}
+#next:hover{
+    background-color: white;
+}
+#ch-back{
+    width:15%;
+    position: absolute;
+    bottom: -2%;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 140;
+}
+.number{
+    width: 60px;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 28.5%;
+    left:48.5%;
+    animation: floating 1s;
+}
+@keyframes floating{
+    100%{bottom:31%; transform: scale(1.2);opacity: 0;}
+}
+#score{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+#instruction{
+    width: 40%;
+    height:auto;
+    display: inline-block;
+    position: absolute;
+    top:20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    z-index: 200;
+}
+.fish-ins{
+    width: 60%;
+    margin: 30px 20%;
+}
+#time{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top:-18px;
+    font-size:2rem;
+    background-color: white;
+    border:3px solid black;
+    border-radius: 50px;
+}
+#clock{
+    width: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 150px;
+    background-color: antiquewhite;
+    position:absolute;
+    right: 28px;
+    top:55px;
+    overflow: hidden; 
+}
+#clock-progress{
+    width: 15px;
+    height: 150px;
+    background-color: aliceblue;
+    transition: 20s;
+}
+#instruction h1{
+    text-align: center;
+}
+#instruction p{
+    text-align: center;
+    font-size:1.1rem;
+    margin-top: -1.5rem;
+    font-family: sans-serif;
+}
+#filter{
+    width:100%;
+    height: 100%;
+    background-color: rgba(155,155,155,0.5);
+    z-index: 150;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#fish-area{
+    width: 100%;
+    height: 100%;
+}
+#over{
+    font-size:2.5rem;
+    color:#3DBFC9;
+}
